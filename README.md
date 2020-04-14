@@ -29,6 +29,12 @@ pgweb --url postgres://user:password@host:port/database?sslmode=[mode]
 
 6. Setup oauth2proxy
 
+'''
+helm upgrade oauth2-proxy --install stable/oauth2-proxy \
+--reuse-values \
+--values oauth2-proxy-config.yaml
+'''
+
    * https://www.digitalocean.com/community/tutorials/how-to-protect-private-kubernetes-services-behind-a-github-login-with-oauth2_proxy
    * got error "named cookie not present"
    * https://github.com/oauth2-proxy/oauth2-proxy/issues/74#issuecomment-466955734

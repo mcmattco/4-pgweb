@@ -12,7 +12,7 @@ ingress:
     - oauth.mcmattco.com
   annotations:
     kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   tls:
     - secretName: oauth2-proxy-https-cert
       hosts:
